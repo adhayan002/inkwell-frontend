@@ -14,7 +14,7 @@ const PostPage = () => {
   const navigate = useNavigate();
   useEffect(() => {
     console.log(id);
-    fetch(`https://backend-blog-jwod.onrender.com/post/${id}`)
+    fetch(`https://drab-hen-slippers.cyclic.app/post/${id}`)
       .then((response) => response.json())
       .then((postInfo) => {
         setPostInfo(postInfo);
