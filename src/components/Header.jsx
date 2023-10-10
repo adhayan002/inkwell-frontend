@@ -5,7 +5,7 @@ import { UserContext } from "./UserContext"
 function Header() {
   const {setUserInfo,userInfo}=useContext(UserContext)
   useEffect(()=>{
-    fetch('https://drab-hen-slippers.cyclic.app/profile',{
+    fetch('https://backend-blog-jwod.onrender.com',{
       credentials:'include'
     }).then(response=>{
       response.json().then(userInfo=>{
