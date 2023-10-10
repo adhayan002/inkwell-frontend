@@ -12,7 +12,7 @@ export const EditPost = () => {
   const [redirect, setRedirect] = useState(false);
 
   useEffect(() => {
-    fetch(`https://drab-hen-slippers.cyclic.app/post/${id}`).then((response) =>
+    fetch(`https://backend-blog-jwod.onrender.com/post/${id}`).then((response) =>
       response.json().then((data) => {
         setTitle(data.title);
         setSummary(data.summary);
