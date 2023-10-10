@@ -5,7 +5,7 @@ function RegisterPage() {
     const [password, setPassword] = useState('');
 
     async function register() {
-        const response=await fetch("https://drab-hen-slippers.cyclic.app/register", {
+        const response=await fetch("https://backend-blog-jwod.onrender.com/register", {
             method: 'POST',
             body: JSON.stringify({ username, password }),
             headers: { "Content-Type": "application/json" },
