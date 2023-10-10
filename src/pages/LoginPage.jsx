@@ -9,7 +9,7 @@ function LoginPage() {
   const {setUserInfo}=useContext(UserContext)
   async function login(ev) {
     ev.preventDefault();
-    const response = await fetch('https://backend-blog-jwod.onrender.com/login', {
+    const response = await fetch('https://drab-hen-slippers.cyclic.app/login', {
       method: 'POST',
       body: JSON.stringify({username, password}),
       headers: {'Content-Type':'application/json'},
