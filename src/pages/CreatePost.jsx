@@ -17,7 +17,7 @@ const CreatePost = () => {
     data.set("content", content);
     data.set("file", files);
     e.preventDefault();
-    const response = await fetch(`https://backend-blog-jwod.onrender.com/post`, {
+    const response = await fetch(`https://drab-hen-slippers.cyclic.app/post`, {
       method: "POST",
       body: data,
       credentials: "include",
