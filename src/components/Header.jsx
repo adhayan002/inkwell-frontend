@@ -15,7 +15,7 @@ function Header() {
   },[])
 
   function logout(){
-    fetch('https://backend-blog-jwod.onrender.com/logout',{
+    fetch('https://fullstack-blog-api-eight.vercel.app/logout',{
       credentials:'include',method:"POST"
     })
     setUserInfo(null)
