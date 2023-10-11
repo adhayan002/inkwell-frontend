@@ -23,7 +23,7 @@ const PostPage = () => {
   }, []);
 
   const handleDelete = async (postId) => {
-    await fetch(`https://fullstack-blog-api-eight.vercel.app/delete/${postId}`, {
+    await fetch(`https://backend-blog-jwod.onrender.com/delete/${postId}`, {
       method: "DELETE",
       credentials: "include",
     })
